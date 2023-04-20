@@ -1,76 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
 .wrapper {
-    background-color: #9C2BFF;
-  }
-  
-  header {
-    background-color: #FAEE35;
-    padding: 25px;
-    text-align: center;
-    color: black;
-  }
-  
-  nav {
-    background-color: rgb(220, 220, 220);
-    margin: 10px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid black;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  /* unvisited link */
-  a:link {
-    color: grey;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: grey;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: yellowgreen;
-    background-color: rgb(52, 111, 221);
-    padding: 2px;
-  }
-  
-  /* selected link */
-  a:active {
-    color: rgb(52, 111, 221);
-  }
-  
-  main {
-    background-color: rgb(220, 220, 220);
-  }
-  
-  footer {
-    background-color: #FAEE35;
-    padding: 25px;
-    text-align: center;
-    color: black;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 50%;
-    background-color: white;
-    border: 1px solid black;
-  }
-  
-  th {
-    background-color: white;
-    color: black;
-  }
-  
-  td {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: #6c5ce7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+nav a {
+  display: inline-block;
+  color: #6c5ce7;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #6c5ce7;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+main h2 {
+  color: #6c5ce7;
+}
+
+main p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+main ol {
+  margin-left: 20px;
+}
+
+main table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main th, main td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+main th {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+main tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
